@@ -1,0 +1,29 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+html, body { padding: 0; margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji"; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 24px; }
+.header { margin-bottom: 16px; }
+.header h1 { margin: 0 0 8px; font-size: 28px; }
+.footer { margin-top: 24px; opacity: .7; font-size: 14px; }
+
+.card { background: color-mix(in oklab, Canvas, CanvasText 3%); border: 1px solid color-mix(in oklab, CanvasText, transparent 88%); border-radius: 12px; padding: 16px; }
+.row { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 900px) { .row { grid-template-columns: 1fr 1fr; } }
+
+textarea { width: 100%; min-height: 200px; resize: vertical; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+input[type="file"] { width: 100%; }
+.button { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 8px; border: 1px solid color-mix(in oklab, CanvasText, transparent 80%); background: color-mix(in oklab, Canvas, CanvasText 2%); cursor: pointer; }
+.button:hover { background: color-mix(in oklab, Canvas, CanvasText 5%); }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; border: 1px solid color-mix(in oklab, CanvasText, transparent 70%); }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.list { margin: 0; padding-left: 18px; }
+.list li { margin: 4px 0; }
+
+.score { font-weight: 700; }
+
+.kv { display: grid; grid-template-columns: 180px 1fr; gap: 8px; }
+.kv div { padding: 4px 0; }
+.kv div:nth-child(odd) { opacity: .7; }
